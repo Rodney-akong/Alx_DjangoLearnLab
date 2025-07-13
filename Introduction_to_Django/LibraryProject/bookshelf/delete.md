@@ -1,4 +1,11 @@
-book = Book.objects.get(title="Nineteen Eighty-Four"); 
-book.delete()
-Output: Book instance deleted successfully. `Book.objects.all()` returns an empty queryset.
+# Delete Operation
 
+## Command
+
+from bookshelf.models import Book
+book.delete()
+Book.objects.all()
+
+# Book instance deleted. No book records remaining
+
+<QuerySet [<Book: Book object (1)>]>

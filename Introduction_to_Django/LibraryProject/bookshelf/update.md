@@ -1,5 +1,11 @@
 
-book = Book.objects.get(title="1984"); 
-book.title = "Nineteen Eighty-Four"; 
+# Update Operation
+
+## Command
+
+book.title = "Nineteen Eighty-Four"
 book.save()
-Output: Title updated successfully
+
+# Book title successfully updated
+
+print(book.title) # Nineteen Eighty-Four
