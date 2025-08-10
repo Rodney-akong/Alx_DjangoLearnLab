@@ -1,6 +1,3 @@
-from django.shortcuts import render
-
-# Create your views here.
 # api/views.py
 from rest_framework import generics, permissions
 from .models import Book
