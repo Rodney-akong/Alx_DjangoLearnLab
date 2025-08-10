@@ -1,0 +1,28 @@
+# API Endpoints – Book Model
+
+## List All Books
+GET /books/
+- Returns a list of all books.
+- No authentication required.
+
+## Create Book
+POST /books/
+- Creates a new book.
+- Authentication required.
+- Required fields: title, author, published_date, isbn, pages.
+
+## Retrieve Book by ID
+GET /books/<id>/
+- Returns details of a specific book.
+- No authentication required.
+
+## Update Book
+PUT /books/<id>/
+- Updates all fields of a book.
+- Authentication required.
+
+## Delete Book
+DELETE /books/<id>/
+- Deletes a book.
+- Authentication required.
+
