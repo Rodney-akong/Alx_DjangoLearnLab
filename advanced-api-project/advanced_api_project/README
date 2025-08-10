@@ -26,3 +26,21 @@ DELETE /books/<id>/
 - Deletes a book.
 - Authentication required.
 
+# Filtering, Searching, and Ordering
+
+## Filtering
+Use query parameters to filter books:
+- GET /books/?title=Some%20Title
+- GET /books/?author=John%20Doe
+- GET /books/?published_date=2024-01-01
+
+## Searching
+Use `search` parameter for partial matches:
+- GET /books/?search=django
+- GET /books/?search=vincent
+
+## Ordering
+Use `ordering` parameter to sort:
+- GET /books/?ordering=title
+- GET /books/?ordering=-published_date
+- GET /books/?ordering=pages
