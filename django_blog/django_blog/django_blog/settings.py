@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -121,6 +122,15 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / "blog" / "static",
 ]
+# Redirects after login/logout
+LOGIN_REDIRECT_URL = 'profile'
+LOGOUT_REDIRECT_URL = 'login'
+LOGIN_URL = 'login'
+
+
+# media (for profile pictures)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
